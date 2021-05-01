@@ -12,7 +12,6 @@ class App extends Component {
   }
 
   handleOnClickUsers() {
-    console.log(this.props)
     this.props.dispatch({
       type: 'GET_COUNT_OF_USERS',
     });
