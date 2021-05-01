@@ -12,6 +12,7 @@ class App extends Component {
   }
 
   handleOnClickUsers() {
+    console.log(this.props)
     this.props.dispatch({
       type: 'GET_COUNT_OF_USERS',
     });
@@ -34,7 +35,7 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => {
-  debugger;
+  // debugger;
   return { items: state.items }
 }
 
